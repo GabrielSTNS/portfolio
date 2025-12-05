@@ -1,0 +1,35 @@
+.footer {
+  background-color: #13253e;
+  border-top: solid 5px #396c90;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 300px;
+  padding: 2rem;
+
+  img {
+    width: 50px;
+    height: 50px;
+  }
+
+  p {
+    font-size: 1.12rem;
+  }
+
+  .contato {
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 1.12rem;
+
+    a {
+      text-decoration: none;
+      transition: 0.5s;
+
+      &:hover {
+        color: #396c90;
+      }
+    }
+  }
+}

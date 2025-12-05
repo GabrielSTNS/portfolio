@@ -1,0 +1,11 @@
+.article {
+  img {
+    width: 96px;
+    height: 96px;
+    transition: 0.5s;
+
+    &:hover {
+      scale: 1.1;
+    }
+  }
+}
