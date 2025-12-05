@@ -65,7 +65,7 @@ const Main = () => {
           <div className={S.cardProjeto}>
             <CardProjetos
               titulo="Cine VnW"
-              bg="https://gabrielstns.github.io/verde-acao/img/Girassol.png"
+              bg="https://www.secult.ce.gov.br/wp-content/uploads/sites/43/2018/10/Cinema.jpg"
               repo="https://github.com/GabrielSTNS/projeto-cinevnw"
               dp="https://projeto-cinevnw.vercel.app/"
             />
@@ -77,7 +77,7 @@ const Main = () => {
             />
             <CardProjetos
               titulo="Verde Ação"
-              bg="https://gabrielstns.github.io/verde-acao/img/Banner.png"
+              bg="https://gabrielstns.github.io/verde-acao/img/Girassol.png"
               repo="https://github.com/GabrielSTNS/verde-acao"
               dp="https://gabrielstns.github.io/verde-acao/"
             />
