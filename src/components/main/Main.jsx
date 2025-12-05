@@ -20,7 +20,7 @@ const Main = () => {
               eficientes e de qualidade.
             </p>
           </div>
-          <img src="src/assets/fotoPerfil.png" alt="Gabriel Santana" />
+          <img src="../src/assets/fotoPerfil.png" alt="Gabriel Santana" />
         </section>
         <section className={S.tech} id="tech">
           <h2>TECNOLOGIAS EM APRENDIZADO</h2>
