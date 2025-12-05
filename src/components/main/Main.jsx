@@ -1,6 +1,7 @@
 import CardStacks from "../cardStacks/CardStacks";
 import CardProjetos from "../cardProjetos/CardProjetos";
 import S from "./Main.module.scss";
+import fotoPerfil from "../../assets/fotoPerfil.png";
 
 const Main = () => {
   return (
@@ -20,7 +21,7 @@ const Main = () => {
               eficientes e de qualidade.
             </p>
           </div>
-          <img src="../src/assets/fotoPerfil.png" alt="Gabriel Santana" />
+          <img src={fotoPerfil} alt="Gabriel Santana" />
         </section>
         <section className={S.tech} id="tech">
           <h2>TECNOLOGIAS EM APRENDIZADO</h2>
