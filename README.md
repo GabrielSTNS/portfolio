@@ -57,10 +57,10 @@ vite.config.js
 
 Você pode me encontrar em:
 
-- **<a href="https://www.linkedin.com/in/gabrielsnt/" target="_blank">LinkedIn**
-- **<a href="mailto:gabriel2000.santana@gmail.com" target="_blank">E-mail**
-- **<a href="https://wa.me/5511941843687" target="_blank">WhatsApp**
-- **<a href="https://github.com/GabrielSTNS" target="_blank">GitHub**
+- **<a href="https://www.linkedin.com/in/gabrielsnt/">LinkedIn**
+- **<a href="mailto:gabriel2000.santana@gmail.com">E-mail**
+- **<a href="https://wa.me/5511941843687">WhatsApp**
+- **<a href="https://github.com/GabrielSTNS">GitHub**
 
 ---
 
