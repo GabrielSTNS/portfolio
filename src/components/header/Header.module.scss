@@ -1,4 +1,4 @@
-.header {
+header {
   height: 20vh;
   background-color: #13253e;
   display: flex;
@@ -7,7 +7,7 @@
   border-bottom: solid 5px #396c90;
 
   .info {
-    width: 30%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
