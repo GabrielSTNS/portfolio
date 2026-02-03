@@ -1,7 +1,18 @@
 import CardStacks from "../cardStacks/CardStacks";
 import CardProjetos from "../cardProjetos/CardProjetos";
 import S from "./Main.module.scss";
-import fotoPerfil from "../../assets/fotoPerfil.png";
+import fotoPerfil from "../../assets/images/fotoPerfil.png";
+import js from "../../assets/images/icons/javascript.png";
+import py from "../../assets/images/icons/python.png";
+import react from "../../assets/images/icons/react.png";
+import next from "../../assets/images/icons/nextjs.png";
+import tw from "../../assets/images/icons/tailwind.png";
+import html from "../../assets/images/icons/html.png";
+import css from "../../assets/images/icons/css.png";
+import scss from "../../assets/images/icons/scss.png";
+import sql from "../../assets/images/icons/sql.png";
+import git from "../../assets/images/icons/git.png";
+import github from "../../assets/images/icons/github.png";
 
 const Main = () => {
   return (
@@ -22,49 +33,20 @@ const Main = () => {
         </div>
         <img src={fotoPerfil} alt="Gabriel Santana" />
       </section>
-      <section className={S.tech} id="tech">
+      <section className={S.tecnologias} id="tech">
         <h2>TECNOLOGIAS</h2>
         <div className={S.stacks}>
-          <CardStacks
-            src="https://img.icons8.com/color/96/html-5--v1.png"
-            alt="html-shield"
-          />
-          <CardStacks
-            src="https://img.icons8.com/color/96/css3.png"
-            alt="css-shield"
-          />
-          <CardStacks
-            src="https://img.icons8.com/color/96/javascript--v1.png"
-            alt="js-shield"
-          />
-          <CardStacks
-            src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/96/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png"
-            alt="react-shield"
-          />
-          <CardStacks
-            src="https://img.icons8.com/color/48/nextjs.png"
-            alt="next-shield"
-          />
-          <CardStacks
-            src="https://img.icons8.com/color/96/tailwind_css.png"
-            alt="tailwind-shield"
-          />
-          <CardStacks
-            src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/96/external-python-an-interpreted-high-level-general-purpose-programming-language-logo-shadow-tal-revivo.png"
-            alt="python-shield"
-          />
-          <CardStacks
-            src="https://img.icons8.com/fluency/96/sql.png"
-            alt="sql-shield"
-          />
-          <CardStacks
-            src="https://img.icons8.com/color/96/git.png"
-            alt="git-shield"
-          />
-          <CardStacks
-            src="https://img.icons8.com/glyph-neue/64/github.png"
-            alt="github-shield"
-          />
+          <CardStacks src={html} alt="html-shield" />
+          <CardStacks src={css} alt="css-shield" />
+          <CardStacks src={scss} alt="scss-shield" />
+          <CardStacks src={js} alt="javascript-shield" />
+          <CardStacks src={react} alt="react-shield" />
+          <CardStacks src={next} alt="nextjs-shield" />
+          <CardStacks src={tw} alt="tailwind-shield" />
+          <CardStacks src={py} alt="python-shield" />
+          <CardStacks src={sql} alt="sql-shield" />
+          <CardStacks src={git} alt="git-shield" />
+          <CardStacks src={github} alt="github-shield" />
         </div>
       </section>
       <section className={S.projetos} id="projetos">
