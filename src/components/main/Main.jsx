@@ -42,6 +42,14 @@ const Main = () => {
             alt="react-shield"
           />
           <CardStacks
+            src="https://img.icons8.com/color/48/nextjs.png"
+            alt="next-shield"
+          />
+          <CardStacks
+            src="https://img.icons8.com/color/96/tailwind_css.png"
+            alt="tailwind-shield"
+          />
+          <CardStacks
             src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/96/external-python-an-interpreted-high-level-general-purpose-programming-language-logo-shadow-tal-revivo.png"
             alt="python-shield"
           />
