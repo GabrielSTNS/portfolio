@@ -1,18 +1,39 @@
-import S from "./Header.module.scss";
+import { useState } from "react";
+import s from "./Header.module.scss";
+import { NavLink } from "react-router-dom";
+
+const linkClass = ({ isActive }) => (isActive ? s.linkAtivo : "");
 
 const Header = () => {
+  const [menuAberto, setMenuAberto] = useState(false);
+
+  const abrirMenu = () => setMenuAberto((prev) => !prev);
+  const fecharMenu = () => setMenuAberto(false);
   return (
-    <header className={S.header}>
-      <div className={S.info}>
+    <header className={s.header}>
+      <div className={s.boxTexto}>
         <h1>Gabriel Santana</h1>
-        <p>Desenvolvedor Full-Stack</p>
+        <p>Desenvolvedor Full Stack</p>
       </div>
 
-      <nav className={S.links}>
-        <a href="#sobre">Sobre mim</a>
-        <a href="#tech">Tecnologias</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#contato">Contato</a>
+      <button
+        className={s.hamburguer}
+        onClick={abrirMenu}
+        aria-label="Abrir menu"
+      >
+        <span className="material-icons">{menuAberto ? "close" : "menu"}</span>
+      </button>
+
+      <nav className={`${s.navbar} ${menuAberto ? s.navAberta : ""}`}>
+        <NavLink to="/" className={linkClass}>
+          Sobre mim
+        </NavLink>
+        <NavLink to="/projetos" className={linkClass} onClick={fecharMenu}>
+          Meus projetos
+        </NavLink>
+        <NavLink to="/contato" className={linkClass} onClick={fecharMenu}>
+          Entre em contato
+        </NavLink>
       </nav>
     </header>
   );

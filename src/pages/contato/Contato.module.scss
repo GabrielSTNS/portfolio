@@ -1,0 +1,62 @@
+@use "../../variaveis" as *;
+
+.contato {
+  min-height: 100dvh;
+  background-color: $azul-claro;
+  color: $branco-suave;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 40px;
+  text-align: center;
+}
+
+.formContato {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  label {
+    text-align: left;
+    font-weight: 500;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    background-color: $branco-suave;
+    color: $azul-escuro;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  button {
+    margin-top: 8px;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: $verde-agua;
+    color: $branco-suave;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+
+    @media (hover: hover) {
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+}

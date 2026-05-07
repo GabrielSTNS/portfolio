@@ -1,48 +1,43 @@
+@use "../../variaveis" as *;
+
 .cards {
-  width: 500px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  gap: 16px;
+  width: clamp(280px, 30vw, 400px);
 
   h2 {
-    font-size: 1.5rem;
-  }
-
-  .article {
-    background-color: #fff;
-    width: 400px;
-    height: 250px;
-    text-align: center;
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    filter: blur(2px);
-    transition: 0.5s;
-    margin-bottom: 25px;
-
-    &:hover {
-      border-radius: 30px;
-      scale: 1.1;
-      filter: none;
-      box-shadow: 0 0 10px 4px #396c90;
-    }
-  }
-
-  .links {
-    width: 400px;
+    min-height: 60px;
     display: flex;
-    gap: 20px;
+    align-items: center;
     justify-content: center;
+    text-align: center;
+  }
+}
 
-    a {
-      text-decoration: none;
-      font-size: 1.2rem;
-      transition: 0.5s;
+.article {
+  width: 100%;
+  height: clamp(200px, 25vw, 280px);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
 
+.links {
+  display: flex;
+  gap: 16px;
+
+  a {
+    text-decoration: none;
+    color: $branco-suave;
+    font-weight: 500;
+    transition: 0.3s;
+
+    @media (hover: hover) {
       &:hover {
-        color: #396c90;
+        scale: 1.1;
       }
     }
   }

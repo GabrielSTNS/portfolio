@@ -1,22 +1,22 @@
-import S from "./CardProjetos.module.scss";
+import { Link } from "react-router-dom";
+import s from "./CardProjetos.module.scss";
 
 const CardProjetos = (props) => {
   return (
     <>
-      <div className={S.cards}>
+      <div className={s.cards}>
         <h2>{props.titulo}</h2>
         <article
-          className={S.article}
+          className={s.article}
           style={{ backgroundImage: `url(${props.bg})` }}
         ></article>
-        <img src={props.src} alt={props.alt} />
-        <div className={S.links}>
-          <a href={props.repo} target="_blank">
-            Repositório
-          </a>
-          <a href={props.dp} target="_blank">
+        <div className={s.links}>
+          <Link to={props.deploy} target="_blank">
             Deploy
-          </a>
+          </Link>
+          <Link to={props.repo} target="_blank">
+            Repositório
+          </Link>
         </div>
       </div>
     </>

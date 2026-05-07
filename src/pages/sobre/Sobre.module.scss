@@ -1,0 +1,40 @@
+@use "../../variaveis" as *;
+
+.sobre {
+  background-color: $azul-claro;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: center;
+  min-height: 100dvh;
+  padding: 40px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 80px 24px;
+  }
+}
+
+.foto {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.boxTexto {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: justify;
+  color: $branco-suave;
+
+  h1 {
+    font-weight: 600;
+
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+  }
+}
