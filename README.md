@@ -80,13 +80,13 @@ Formulário funcional integrado com EmailJS para envio de mensagens diretamente 
 Clone o projeto:
 
 ```bash
-git clone https://github.com/GabrielSTNS/NOME-DO-REPOSITORIO.git
+git clone https://github.com/GabrielSTNS/portfolio
 ```
 
 Entre na pasta:
 
 ```bash
-cd NOME-DO-REPOSITORIO
+cd portfolio
 ```
 
 Instale as dependências:
