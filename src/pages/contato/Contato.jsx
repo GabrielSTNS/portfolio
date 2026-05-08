@@ -1,6 +1,23 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
 import s from "./Contato.module.scss";
+
+const Toast = Swal.mixin({
+  toast: true,
+  position: "top-right",
+  timer: 3000,
+  timerProgressBar: true,
+  background: "#042c53",
+  color: "#e6f1fb",
+  customClass: {
+    container: "toast-topo",
+  },
+  didOpen: (toast) => {
+    toast.onmouseenter = Swal.stopTimer;
+    toast.onmouseleave = Swal.resumeTimer;
+  },
+});
 
 const Contato = () => {
   const [formulario, setFormulario] = useState({
@@ -17,6 +34,12 @@ const Contato = () => {
   const envio = (e) => {
     e.preventDefault();
 
+    Swal.fire({
+      title: "Enviando mensagem...",
+      allowOutsideClick: false,
+      didOpen: () => Swal.showLoading(),
+    });
+
     emailjs
       .send(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
@@ -25,7 +48,10 @@ const Contato = () => {
         import.meta.env.VITE_EMAILJS_KEY,
       )
       .then(() => {
-        alert("Mensagem enviada com sucesso!");
+        Toast.fire({
+          icon: "success",
+          title: "Mensagem enviada com sucesso!",
+        });
         setFormulario({ nome: "", email: "", telefone: "", mensagem: "" });
       })
       .catch(() => {
