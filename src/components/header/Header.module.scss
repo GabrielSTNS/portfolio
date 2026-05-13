@@ -16,6 +16,10 @@
   gap: 0.25rem;
   color: #fff;
 
+  a {
+    text-decoration: none;
+  }
+
   h1 {
     font-size: clamp(1.25rem, 3vw, 2.25rem);
     font-weight: 600;
@@ -70,9 +74,13 @@
 
 @media (max-width: 600px) {
   .header {
-    // flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+
+  .boxTexto {
+    flex: 1;
+    align-items: center;
   }
 
   .hamburguer {
