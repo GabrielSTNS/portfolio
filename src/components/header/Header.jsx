@@ -1,6 +1,6 @@
 import { useState } from "react";
 import s from "./Header.module.scss";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const linkClass = ({ isActive }) => (isActive ? s.linkAtivo : "");
 
@@ -12,7 +12,9 @@ const Header = () => {
   return (
     <header className={s.header}>
       <div className={s.boxTexto}>
-        <h1>Gabriel Santana</h1>
+        <Link to="/">
+          <h1>Gabriel Santana</h1>
+        </Link>
         <p>Desenvolvedor Full Stack</p>
       </div>
 
